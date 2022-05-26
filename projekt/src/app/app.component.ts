@@ -9,5 +9,8 @@ import { KalkulatorService } from './kalkulator.service';
 })
 export class AppComponent {
   title = 'projekt';
-  constructor(kalkulator:KalkulatorService){}
+  dodawanie:number = 0;
+  constructor(kalkulator:KalkulatorService){
+    this.dodawanie = kalkulator.dodaj(2,4,5,6,8,9);
+  }
 }
