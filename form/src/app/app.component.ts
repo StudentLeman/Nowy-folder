@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'form';
+  imieinazwisko:string="";
+  email:string="";
+  produkt:string="";
+  ilosc:string="";
+  wiadomosc:string="";
+  onSubmit(){
+    console.log("wpisanio: "+this.imieinazwisko+" "+this.email+" "+this.produkt)
+  }
 }
